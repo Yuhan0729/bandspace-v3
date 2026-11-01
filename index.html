@@ -15,9 +15,9 @@
     <p>Choose an available time and book your rehearsal.</p>
 
     <div class="date-row">
-      <span>Select date</span>
-      <strong>24 Oct 2026</strong>
-    </div>
+    <label for="dateInput">Select date</label>
+    <input id="dateInput" type="date" value="2026-11-01">
+  </div>
 
     <h2>Schedule</h2>
 
@@ -29,6 +29,13 @@
     <div class="time-slot available" data-start="16:00" data-end="17:00">
       <span>16:00 - 17:00</span>
       <span>AVAILABLE</span>
+    </div>
+    
+    <div id="myBooking" class="my-booking">
+      <h2>My Booking</h2>
+      <p id="myBookingBand"></p>
+      <p id="myBookingDate"></p>
+      <p id="myBookingTime"></p>
     </div>
 
     <div class="time-slot booked">
@@ -43,11 +50,11 @@
 
     <div id="bookingForm" class="booking-form">
 
-      <h2>Book a rehearsal</h2>
+     <h2 id="formTitle">Book a rehearsal</h2>
 
       <p>
-        Date:
-        <strong>24 Oct 2026</strong>
+     Date:
+     <strong id="selectedDate">2026-11-01</strong>
       </p>
 
       <p>
@@ -71,7 +78,7 @@
 
       <h3 id="confirmedBand"></h3>
 
-      <p>24 Oct 2026</p>
+      <p id="confirmedDate"></p>
 
       <p id="confirmedTime"></p>
 

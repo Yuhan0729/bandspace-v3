@@ -97,3 +97,10 @@ button:hover {
 #backButton {
   background-color: #666;
 }
+.my-booking {
+  display: none;
+  background-color: white;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 12px;
+}
